@@ -1,0 +1,43 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 25px 0;
+    font-family: $m-medium;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 415px) {
+            display: none;
+        }
+
+        li {
+            font-family: $m-medium;
+            font-weight: 500;
+            color: white;
+            transition: 0.2s;
+            cursor: pointer;
+
+            @media screen and (max-width: 769px) {
+                font-size: 0.9rem;
+            }
+
+
+            &:hover {
+                color: $orange;
+            }
+
+            &.active {
+                color: $orange;
+                position: relative;
+
+            }
+        }
+
+
+    }
+}
